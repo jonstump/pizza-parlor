@@ -51,9 +51,10 @@ $("document").ready(function() {
   
   $("form").submit(function(event){
     event.preventDefault();
-    let sizeOfPizza = $("input:radio[name=sizeOfPizza]:checked").val(); 
-    let cheese = $("input:radio[name=cheese]:checked").val();
-    let toppingArray = [];
+    const sizeOfPizza = $("#sizeOfPizza").val();
+    //let sizeOfPizza = $("input:radio[name=sizeOfPizza]:checked").val(); 
+    const cheese = $("input:radio[name=cheese]:checked").val();
+    const toppingArray = [];
     $("input:checkbox[name=toppings]:checked").each(function(){
       const toppingSelection = parseInt($(this).val());
       toppingArray.push(toppingSelection);
