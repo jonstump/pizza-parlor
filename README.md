@@ -15,7 +15,6 @@
 * _Pizza Parlor_  
 * Simple website that allows a user to choose toppings on a pizza and show them a price based on their choices. This site uses constructors and prototypes in javascript.
 
-
 ## Specs / Tests
 
 **Describe** Pizza()
@@ -39,32 +38,32 @@
 
 **Describe** Pizza.prototype.toppingsTotal()
 <br/>
-**Test ** "It will add the values in the array."
+**Test 5** "It will add the values in the array."
 <br/>
 **Expect** toppingsTotal([1, 1, 2]).toEqual("4")
 <br/>
 
 **Describe** Pizza.prototype.pizzaPriceSize()
 <br/>
-**Test ** "It will assign a value to pizza size."
+**Test 6** "It will assign a value to pizza size."
 <br/>
 **Expect** pizzaPriceSize("medium").toEqual("7")
 <br/>
 
 **Describe** Pizza.prototype.pizzaPriceCheese()
 <br/>
-**Test ** "It will assign a value to pizza size."
+**Test 7** "It will assign a value to pizza size."
 <br/>
 **Expect** pizzaPriceCheese("cheddar").toEqual("2")
 <br/>
 
 **Describe** Pizza.prototype.pizzaPrice()
 <br/>
-**Test ** "It will total pizzaPriceSize, pizzaPriceCheese, and toppingsTotal." 
+**Test 8** "It will total pizzaPriceSize, pizzaPriceCheese, and toppingsTotal." 
 <br/>
 **Expect** pizzaPrice(pizzaPriceSize() + pizzaPriceCheese() + toppingsTotal()).toEqual("13")
 <br/>
-**Test ** "It will change the pizzaPrice() value to a user friendly dollar amount." 
+**Test 9** "It will change the pizzaPrice() value to a user friendly dollar amount." 
 <br/>
 **Expect** pizzaPrice(13).toEqual("$13.00")
 <br/>
