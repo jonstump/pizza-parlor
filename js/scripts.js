@@ -58,13 +58,14 @@ $("document").ready(function() {
       const toppingSelection = $(this).val();
       toppingArray.push(toppingSelection);
     });
+    //need to turn array into integers.
 
     pizza.pizzaSize = sizeOfPizza;
     pizza.cheeseSelection = cheese;
     pizza.toppings = toppingArray;
 
     let cost = pizza.pizzaPrice();
-    $("#price").text(pizza.pizzaPrice())
+    $("#price").val(pizza.pizzaPrice())
     $("#cost").show();
     console.log(pizza.pizzaPrice())
     return cost;
