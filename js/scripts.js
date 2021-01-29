@@ -11,5 +11,18 @@ Pizza.prototype.toppingsTotal = function () {
   return toppingsSum;
 }
 
+Pizza.prototype.pizzaPriceSize = function() {
+  if (this.pizzaSize === "small") {
+    sizePrice = 5
+  } else if (this.pizzaSize === "medium") {
+    sizePrice = 7
+  } else if (this.pizzaSize === "large") {
+    sizePrice = 9
+  } else {
+    sizePrice = 10
+  }
+  return sizePrice;
+}
+
 
 //User Interface Logic
