@@ -24,5 +24,18 @@ Pizza.prototype.pizzaPriceSize = function() {
   return sizePrice;
 }
 
+Pizza.prototype.pizzaPriceCheese = function() {
+  if (this.cheeseSelection === "cheddar") {
+    cheesePrice = 2
+  } else if (this.cheeseSelection === "swiss") {
+    cheesePrice = 2
+  } else if (this.cheeseSelection === "parmesan") {
+    cheesePrice = 3
+  } else {
+    cheesePrice = 5
+  }
+  return cheesePrice;
+}
+
 
 //User Interface Logic
