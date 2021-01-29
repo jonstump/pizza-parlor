@@ -5,12 +5,14 @@ function Pizza(pizzaSize, cheeseSelection, toppings) {
   this.toppings = toppings;
 }
 
+//Sums toppings total
 Pizza.prototype.toppingsTotal = function () {
   const reducer = (accumulator, currentValue) => accumulator + currentValue;
   const toppingsSum = this.toppings.reduce(reducer);
   return toppingsSum;
 }
 
+//Assigns value to size selected
 Pizza.prototype.pizzaPriceSize = function() {
   if (this.pizzaSize === "small") {
     sizePrice = 5
@@ -24,6 +26,7 @@ Pizza.prototype.pizzaPriceSize = function() {
   return sizePrice;
 }
 
+//Assigns value to cheese selected
 Pizza.prototype.pizzaPriceCheese = function() {
   if (this.cheeseSelection === "cheddar") {
     cheesePrice = 2
@@ -35,6 +38,11 @@ Pizza.prototype.pizzaPriceCheese = function() {
     cheesePrice = 5
   }
   return cheesePrice;
+}
+
+Pizza.prototype.pizzaPrice = function() {
+  const price = (this.toppingsTotal() + this.pizzaPriceSize() + this.pizzaPriceCheese());
+  return ("$" + price + ".00");
 }
 
 
