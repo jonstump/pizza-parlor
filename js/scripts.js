@@ -52,14 +52,12 @@ $("document").ready(function() {
   $("form").submit(function(event){
     event.preventDefault();
     const sizeOfPizza = $("#sizeOfPizza").val();
-    //let sizeOfPizza = $("input:radio[name=sizeOfPizza]:checked").val(); 
-    const cheese = $("input:radio[name=cheese]:checked").val();
+    const cheese = $("#cheese").val();
     const toppingArray = [];
     $("input:checkbox[name=toppings]:checked").each(function(){
       const toppingSelection = parseInt($(this).val());
       toppingArray.push(toppingSelection);
     });
-    //need to turn array into integers.
 
     pizza.pizzaSize = sizeOfPizza;
     pizza.cheeseSelection = cheese;

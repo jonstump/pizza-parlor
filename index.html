@@ -15,7 +15,6 @@
       </div>
       <div class="pizza order">
         <form class="form group">
-          <p>Choose your Size:</p>
           <label>Choose size of pie:</label>
           <select class="form-control" id="sizeOfPizza">
             <option value="small">Small</option>
@@ -23,23 +22,13 @@
             <option value="large">Large</option>
             <option value="xlarge">X-Large</option>
           </select>
-          <p>Choose your Cheese:</p>
-          <label>
-            <input type="radio" name="cheese" value="cheddar" checked>
-            Cheddar
-          </label>
-          <label>
-            <input type="radio" name="cheese" value="swiss" checked>
-            Swiss
-          </label>
-          <label>
-            <input type="radio" name="cheese" value="parmesan" checked>
-            Parmesan
-          </label>
-          <label>
-            <input type="radio" name="cheese" value="vegan" checked>
-            Vegan
-          </label>
+          <label>Choose cheese:</label>
+          <select class="form-control" id="cheese">
+            <option value="cheddar">Cheddar</option>
+            <option value="parmesan">Parmesan</option>
+            <option value="swiss">Swiss</option>
+            <option value="vegan">Vegan</option>
+          </select>
           <p>Choose your toppings:</p>
           <input type="checkbox" name="toppings" value="1"> Pepperoni<br>
           <input type="checkbox" name="toppings" value="1">Mushrooms<br>
