@@ -45,5 +45,25 @@ Pizza.prototype.pizzaPrice = function() {
   return ("$" + price + ".00");
 }
 
-
 //User Interface Logic
+$("document").ready(function() {
+  let pizza = new Pizza();
+
+  $("form").submit(function(event){
+    event.preventDefault();
+    let sizeOfPizza = $("input#sizeOfPizza").val(); 
+    let cheese = $("input#cheese").val();
+    let toppingArray = [];
+    $("input:checkbox[name=toppings]:checked").each(function(){
+      const toppingSelection = $(this).val();
+      toppingArray.push(toppingSelection);
+    });
+
+    pizza.pizzaSize = sizeOfPizza;
+    pizza.cheeseSelection = cheese;
+    pizza.toppings = toppingArray;
+
+    $("#price").text(pizza.pizzaPrice)
+    $("#cost").show();
+  });
+});
