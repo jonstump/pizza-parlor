@@ -32,15 +32,42 @@
 <br/>
 **Expect** newPizza.cheeseSelection("cheddar").toEqual("cheddar")
 <br/>
-**Test 4** "It will store the first topping selection as a string."
+**Test 4** "It will store topping selections as an array of values."
 <br/>
-**Expect** newPizza.topping1("pepperoni").toEqual("pepperoni")
-<br/>
-**Test 5** "It will store the second topping selection as a string."
-<br/>
-**Expect** newPizza.topping2("mushrooms").toEqual("mushrooms")
+**Expect** newPizza.toppings("pepperoni, mushrooms, bacon").toEqual([1, 1, 2])
 <br/>
 
+**Describe** Pizza.prototype.toppingsTotal()
+<br/>
+**Test ** "It will add the values in the array."
+<br/>
+**Expect** toppingsTotal([1, 1, 2]).toEqual("4")
+<br/>
+
+**Describe** Pizza.prototype.pizzaPriceSize()
+<br/>
+**Test ** "It will assign a value to pizza size."
+<br/>
+**Expect** pizzaPriceSize("medium").toEqual("7")
+<br/>
+
+**Describe** Pizza.prototype.pizzaPriceCheese()
+<br/>
+**Test ** "It will assign a value to pizza size."
+<br/>
+**Expect** pizzaPriceCheese("cheddar").toEqual("2")
+<br/>
+
+**Describe** Pizza.prototype.pizzaPrice()
+<br/>
+**Test ** "It will total pizzaPriceSize, pizzaPriceCheese, and toppingsTotal." 
+<br/>
+**Expect** pizzaPrice(pizzaPriceSize() + pizzaPriceCheese() + toppingsTotal()).toEqual("13")
+<br/>
+**Test ** "It will change the pizzaPrice() value to a user friendly dollar amount." 
+<br/>
+**Expect** pizzaPrice(13).toEqual("$13.00")
+<br/>
 
 
 ## Setup/installation Requirements
