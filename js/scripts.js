@@ -55,7 +55,7 @@ $("document").ready(function() {
     let cheese = $("input:radio[name=cheese]:checked").val();
     let toppingArray = [];
     $("input:checkbox[name=toppings]:checked").each(function(){
-      const toppingSelection = $(this).val();
+      const toppingSelection = parseInt($(this).val());
       toppingArray.push(toppingSelection);
     });
     //need to turn array into integers.
@@ -65,9 +65,8 @@ $("document").ready(function() {
     pizza.toppings = toppingArray;
 
     let cost = pizza.pizzaPrice();
-    $("#price").val(pizza.pizzaPrice())
-    $("#cost").show();
+    $("#price").val(cost)
+    $("#cost").slideDown();
     console.log(pizza.pizzaPrice())
-    return cost;
   });
 });
