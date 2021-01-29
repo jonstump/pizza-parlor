@@ -15,29 +15,65 @@
       </div>
       <div class="pizza order">
         <form class="form group">
-          <label>Choose size of pie:</label>
-          <select class="form-control" id="sizeOfPizza">
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-            <option value="xlarge">X-Large</option>
-          </select>
-          <label>Choose cheese:</label>
-          <select class="form-control" id="cheese">
-            <option value="cheddar">Cheddar</option>
-            <option value="parmesan">Parmesan</option>
-            <option value="swiss">Swiss</option>
-            <option value="vegan">Vegan</option>
-          </select>
-          <p>Choose your toppings:</p>
-          <input type="checkbox" name="toppings" value="1"> Pepperoni<br>
-          <input type="checkbox" name="toppings" value="1">Mushrooms<br>
-          <input type="checkbox" name="toppings" value="2">Bacon<br>
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <label><h2>Choose size of pie:</h2></label>
+              <select class="form-control" id="sizeOfPizza">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="xlarge">X-Large</option>
+              </select>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <label><h2>Choose cheese:</h2></label>
+              <select class="form-control" id="cheese">
+                <option value="cheddar">Cheddar</option>
+                <option value="parmesan">Parmesan</option>
+                <option value="swiss">Swiss</option>
+                <option value="vegan">Vegan</option>
+              </select>
+            </div>
+          </div>
+          <div class="row" style="margin: auto;">
+            <div class="card col-md-4 text-center">
+              <div class="card-body">
+                <div class="card-title"><h3>Meat Choices</h3></div>
+                <input type="checkbox" name="toppings" value="1"> Pepperoni<br>
+                <input type="checkbox" name="toppings" value="2"> Bacon<br>
+                <input type="checkbox" name="toppings" value="2"> Sausage<br>
+                <input type="checkbox" name="toppings" value="2"> Ham<br>
+                <input type="checkbox" name="toppings" value="0"> None<br>
+              </div>
+            </div>
+              <div class="card col-md-4 text-center">
+                <div class="card-body">
+                  <div class="card-title"><h3>Veggie Choices</h3></div>
+                  <input type="checkbox" name="toppings" value="1"> Mushrooms<br>
+                  <input type="checkbox" name="toppings" value="2"> Onions<br>
+                  <input type="checkbox" name="toppings" value="2"> Potatoes<br>
+                  <input type="checkbox" name="toppings" value="2"> Green Peppers<br>
+                  <input type="checkbox" name="toppings" value="0"> None<br>
+                </div>
+              </div>
+              <div class="card col-md-4 text-center">
+                <div class="card-body">
+                  <div class="card-title"><h3>Sauce Choices</h3></div>
+                  <input type="checkbox" name="toppings" value="1"> Marinara<br>
+                  <input type="checkbox" name="toppings" value="2"> Pesto<br>
+                  <input type="checkbox" name="toppings" value="2"> BBQ<br>
+                  <input type="checkbox" name="toppings" value="2"> White<br>
+                  <input type="checkbox" name="toppings" value="0"> None<br>
+                </div>
+              </div>
+            </div>
+          </div>
           <button type="submit" class="btn btn-primary btn-block">Cost</button>
         </form>
-      </div>
-      <div id="cost">
-        <span class="price"></span>
+
+        <div id="cost">
+          <span class="price"></span>
+        </div>
       </div>
     </div>
   </body>
