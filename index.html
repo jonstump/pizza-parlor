@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pizza Place</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Pizza Parlor</h1>
+        <p>This is a pizza parlor. We make pizza pies.</p>
+      </div>
+      <div class="pizza order">
+        <form class="form group">
+          <p>Choose your Size:</p>
+          <label>
+            <input type="radio" name="sizeOfPizza" value="small" checked>
+            Small
+          </label>
+          <label>
+            <input type="radio" name="sizeOfPizza" value="medium" checked>
+            Medium
+          </label>
+          <label>
+            <input type="radio" name="sizeOfPizza" value="large" checked>
+            Large
+          </label>
+          <label>
+            <input type="radio" name="sizeOfPizza" value="xlarge" checked>
+            X-Large
+          </label>
+          <p>Choose your Cheese:</p>
+          <label>
+            <input type="radio" name="cheese" value="cheddar" checked>
+            Cheddar
+          </label>
+          <label>
+            <input type="radio" name="cheese" value="swiss" checked>
+            Swiss
+          </label>
+          <label>
+            <input type="radio" name="cheese" value="parmesan" checked>
+            Parmesan
+          </label>
+          <label>
+            <input type="radio" name="cheese" value="vegan" checked>
+            Vegan
+          </label>
+          <p>Choose your toppings:</p>
+          <input type="checkbox" name="toppings" value="1"> Pepperoni<br>
+          <input type="checkbox" name="toppings" value="1">Mushrooms<br>
+          <input type="checkbox" name="toppings" value="2">Bacon<br>
+          <button type="submit" class="btn btn-primary btn-block">Cost</button>
+        </form>
+      </div>
+      <div id="cost">
+        <span class="price"></span>
+      </div>
+    </div>
+  </body>
+</html>
