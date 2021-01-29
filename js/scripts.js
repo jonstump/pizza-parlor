@@ -7,6 +7,10 @@ function Pizza(pizzaSize, cheeseSelection, toppings) {
 
 //Sums toppings total
 Pizza.prototype.toppingsTotal = function () {
+  if (this.toppings.length === 0) {
+    const toppingsSum = 0;
+    return toppingsSum;
+  }
   const reducer = (accumulator, currentValue) => accumulator + currentValue;
   const toppingsSum = this.toppings.reduce(reducer);
   return toppingsSum;
