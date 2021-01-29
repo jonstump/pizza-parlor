@@ -1,3 +1,10 @@
 cost {
   display: none;
 }
+body {
+  background-image: url("/img/pizzawall.jpg");
+}
+.jumbotron {
+  background-color: crimson;
+  color: #f4f5f0;
+}
