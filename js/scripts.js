@@ -5,9 +5,9 @@ function Pizza(pizzaSize, cheeseSelection, toppings) {
   this.toppings = toppings;
 }
 
-Pizza.prototype.toppingsTotal = function (toppings) {
+Pizza.prototype.toppingsTotal = function () {
   const reducer = (accumulator, currentValue) => accumulator + currentValue;
-  const toppingsSum = toppings.reduce(reducer);
+  const toppingsSum = this.toppings.reduce(reducer);
   return toppingsSum;
 }
 
