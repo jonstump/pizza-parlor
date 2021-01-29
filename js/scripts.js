@@ -65,7 +65,7 @@ $("document").ready(function() {
     pizza.toppings = toppingArray;
 
     let cost = pizza.pizzaPrice();
-    $("#price").val(cost)
+    $(".price").text(cost)
     $("#cost").slideDown();
     console.log(pizza.pizzaPrice())
   });
