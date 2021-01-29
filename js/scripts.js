@@ -48,7 +48,7 @@ Pizza.prototype.pizzaPrice = function() {
 //User Interface Logic
 $("document").ready(function() {
   let pizza = new Pizza();
-
+  
   $("form").submit(function(event){
     event.preventDefault();
     let sizeOfPizza = $("input:radio[name=sizeOfPizza]:checked").val(); 
@@ -63,7 +63,10 @@ $("document").ready(function() {
     pizza.cheeseSelection = cheese;
     pizza.toppings = toppingArray;
 
-    $("#price").text(pizza.pizzaPrice)
+    let cost = pizza.pizzaPrice();
+    $("#price").text(pizza.pizzaPrice())
     $("#cost").show();
+    console.log(pizza.pizzaPrice())
+    return cost;
   });
 });

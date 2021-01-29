@@ -84,6 +84,9 @@ $ git clone https://github.com/
 
 This game can be played via it's [gh-page](https://.github.io/)
 
+## Bugs
+* Returns price concated rather than summed.
+* Example: Price shows as $11272.00 rather than $13.00
 
 ## License
 [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)\
