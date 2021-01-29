@@ -85,7 +85,7 @@ $ git clone https://github.com/
 This game can be played via it's [gh-page](https://.github.io/)
 
 ## Bugs
-
+* Does nothing if not toppings are selected
 
 ## License
 [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)\
