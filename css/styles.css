@@ -7,6 +7,11 @@ body {
 .jumbotron {
   background-color: #dc5618;
   color: #f2f2f2;
+  font-size: 30px;
+}
+.jumbotron h1 {
+  font-family: 'Hanalei', cursive;
+  font-size: 150px;
 }
 form {
   background-color: #f0b72c;
@@ -15,9 +20,22 @@ form {
 .card {
   background-color: #f0b72c;
 }
+.pizza-order h2 {
+  font-family: 'Bangers', cursive;
+}
+.form-control {
+  background-color: #f0b72c;
+  color: #f2f2f2;
+}
 .btn {
   background-color: #46bfcb;
-  border-color: #d3b56B;
-  border: 10px;
-  border-width: 10px;
+  border: 1px white;
+  color: #dc5618;
+  font-weight: bolder;
+}
+#cost {
+  background-color: #46bfcb;
+  color: #f0b72c;
+  font-size: 300%;
+  text-align: center;
 }
