@@ -9,7 +9,6 @@
 * Javascript
 * jQuery
 * Bootstrap
-* Visual Studio Code
 
 ## Description
 * _Pizza Parlor_  
@@ -71,21 +70,35 @@
 
 ## Setup/installation Requirements
 
-* Copy the following link to your clipboard: https://github.com/
+* Copy the following link to your clipboard: https://github.com/pizza-parlor
 * Open a Bash Terminal
 * In your terminal window, navigate to a directory that you would like to clone the repository to
 * Within your git bash terminal type in 'git clone' and then paste in the link from your clipboard by right clicking and selecting 'paste' example below:
 ```bash
-$ git clone https://github.com/
+$ git clone https://github.com/pizza-parlor
 ```
 * After the page has been cloned to your chosen directory locate the folder and open it.
 * After you have the folder open that you cloned from Github.com double click the file "index.html"
 * The webpage should open in the default browser set by your machines settings
 
-This game can be played via it's [gh-page](https://.github.io/)
+This game can be played via it's [gh-page](https://jonstump.github.io/pizza-parlor)
 
 ## Bugs
-* Does nothing if not toppings are selected
+* None
+
+## Further Exploration (on exploration branch)
+* Allow users to order more than one pizza
+* Display a list of pizzas
+* Capture user address
+
+## Sources
+* [Epicodus](https://www.epicodus.com/)
+* [Bootstrap Docs](https://getbootstrap.com/)
+* [stack overflow](https://stackoverflow.com/)
+* [w3schools](https://www.w3schools.com/)
+* [MDN Web Docs](https://developer.mozilla.org/en-US/)
+* [coolors](https://coolors.co/)
+* [Pizza Wallpaper](https://t4.ftcdn.net/jpg/02/75/92/41/360_F_275924184_GP4ACV80EK8NokxlFaUB2qykpXKrroqx.jpg)
 
 ## License
 [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)\
