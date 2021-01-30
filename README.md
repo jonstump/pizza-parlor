@@ -70,12 +70,12 @@
 
 ## Setup/installation Requirements
 
-* Copy the following link to your clipboard: https://github.com/pizza-parlor
+* Copy the following link to your clipboard: https://github.com/jonstump/pizza-parlor
 * Open a Bash Terminal
 * In your terminal window, navigate to a directory that you would like to clone the repository to
 * Within your git bash terminal type in 'git clone' and then paste in the link from your clipboard by right clicking and selecting 'paste' example below:
 ```bash
-$ git clone https://github.com/pizza-parlor
+$ git clone https://github.com/jonstump/pizza-parlor
 ```
 * After the page has been cloned to your chosen directory locate the folder and open it.
 * After you have the folder open that you cloned from Github.com double click the file "index.html"
