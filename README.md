@@ -86,7 +86,8 @@ This game can be played via it's [gh-page](https://jonstump.github.io/pizza-parl
 ## Bugs
 * None
 
-## Further Exploration (on exploration branch)
+## Further Exploration 
+(can be seen exploration branch)
 * Allow users to order more than one pizza
 * Display a list of pizzas
 * Capture user address
