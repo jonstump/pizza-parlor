@@ -2,13 +2,15 @@
 function Orders() {
   this.pizzas = {};
   this.currentId = 0;
-  this.price = 0;
 }
 
 // Adds Pizza and unique id to the Orders object
 Orders.prototype.addPizza = function(pizza) {
   pizza.id = this.assignId();
   this.pizzas[pizza.id] = pizza;
+  // pizza.numberOfToppings = this.toppingCount();
+  // this.pizzas[pizza.numberOfToppings] = pizza;
+  pizza.price = this.pizzaPrice();
 }
 
 // Increases the ID number attached to current.id in the Orders object
@@ -26,6 +28,12 @@ Orders.prototype.findOrder = function(id) {
 }
 
 //Additional BL for Order Prototypes
+// Orders.prototype.toppingCount = function(pizza) {
+//   let numberOfToppings = 0
+//   for (i=1; array.length; i++) {
+//     numberOfToppings++;
+//   }
+// }
 
 //Business Logic for Pizza Object
 function Pizza(pizzaSize, cheeseSelection, toppings) {
@@ -79,6 +87,26 @@ Pizza.prototype.pizzaPrice = function() {
 }
 
 //User Interface Logic
+
+function displayPizzaDetails(addressBookToDisplay) {
+  let contactsList = $("ul#contacts");
+  let htmlForContactInfo = "";
+  Object.keys(addressBookToDisplay.contacts).forEach(function(key) {
+    const contact = addressBookToDisplay.findContact(key);
+    htmlForContactInfo += "<li id=" + contact.id + ">" +contact.firstName + " " + contact.lastName + "</li>";
+  });
+  contactsList.html(htmlForContactInfo);
+}
+
+function showPizza(pizzasId) {
+  const pizza = orders.findOrder(pizzasId);
+  $("#show-pizza").show();
+  $(".sizeOfPizza").html(pizza.pizzaSize);
+  $(".cheeseSelection").html(pizza.cheeseSelection);
+  $(".toppingsCount").html(contact.phoneNumber);
+  $(".email-address").html(contact.emailAddress)
+}
+
 $("document").ready(function() {
   let pizza = new Pizza();
   

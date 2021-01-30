@@ -81,6 +81,7 @@
 <br/>
 **Expect** Orders().toEqual(Pizza{})
 <br/>
+**Test ** "It will attach a price to the Pizzas()
 
 **Describe** Orders.prototype.assignId()
 <br/>
