@@ -96,6 +96,13 @@
 **Expect** this.currentId().toEqual("1")
 <br/>
 
+**Describe** Orders.prototype.toppingsCount()
+<br/>
+**Test 14** "It will count how many topping selections were made."
+<br/>
+**Expect** this.toppings().toEqual(countOfToppings)
+<br/>
+
 ## Setup/installation Requirements
 
 * Copy the following link to your clipboard: https://github.com/pizza-parlor
