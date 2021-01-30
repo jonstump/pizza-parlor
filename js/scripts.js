@@ -1,4 +1,22 @@
 //Business Logic
+function Orders() {
+  this.pizzas = {};
+  this.currentId = 0;
+  this.price = 0;
+}
+
+// Adds Pizza and unique id to the Orders object
+Orders.prototype.addPizza = function(pizza) {
+  pizza.id = this.assignId();
+  this.pizzas[pizza.id] = pizza;
+}
+
+// Increases the ID number attached to current.id in the Orders object
+Orders.prototype.assignId = function() {
+  this.currentId += 1;
+  return this.currentId;
+}
+
 function Pizza(pizzaSize, cheeseSelection, toppings) {
   this.pizzaSize = pizzaSize;
   this.cheeseSelection = cheeseSelection;
