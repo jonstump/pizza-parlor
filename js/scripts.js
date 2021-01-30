@@ -17,6 +17,17 @@ Orders.prototype.assignId = function() {
   return this.currentId;
 }
 
+//Find Order by ID
+Orders.prototype.findOrder = function(id) {
+  if (this.pizzas[id] != undefined) {
+    return this.pizzas[id];
+  }
+  return false;
+}
+
+//Additional BL for Order Prototypes
+
+//Business Logic for Pizza Object
 function Pizza(pizzaSize, cheeseSelection, toppings) {
   this.pizzaSize = pizzaSize;
   this.cheeseSelection = cheeseSelection;
