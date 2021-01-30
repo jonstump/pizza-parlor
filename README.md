@@ -67,6 +67,34 @@
 **Expect** pizzaPrice(13).toEqual("$13.00")
 <br/>
 
+**Describe** Orders()
+<br/>
+**Test 10** "It will return an instance of Orders whose typeof is 'object.'"
+<br/>
+**Expect** typeof new Orders().toEqual('object')
+<br/>
+
+
+**Describe** Orders.prototype.addPizza()
+<br/>
+**Test 11** "It will store Pizzas() as an 'object.'."
+<br/>
+**Expect** Orders().toEqual(Pizza{})
+<br/>
+
+**Describe** Orders.prototype.assignId()
+<br/>
+**Test 12** "It will assign an unique ID to the pizza object within the orders object."
+<br/>
+**Expect** this.currentId().toEqual("1")
+<br/>
+
+**Describe** Orders.prototype.findOrder()
+<br/>
+**Test 13** "It will assign an unique ID to the pizza object within the orders object."
+<br/>
+**Expect** this.currentId().toEqual("1")
+<br/>
 
 ## Setup/installation Requirements
 
