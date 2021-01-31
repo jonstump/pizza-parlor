@@ -8,9 +8,8 @@ function Orders() {
 Orders.prototype.addPizza = function(pizza) {
   pizza.id = this.assignId();
   this.pizzas[pizza.id] = pizza;
-  // pizza.numberOfToppings = this.toppingCount();
-  // this.pizzas[pizza.numberOfToppings] = pizza;
-  pizza.price = this.pizzaPrice();
+  pizza.numberOfToppings = pizza.toppingCount();
+  pizza.price = pizza.pizzaPrice();
 }
 
 // Increases the ID number attached to current.id in the Orders object
@@ -28,12 +27,6 @@ Orders.prototype.findOrder = function(id) {
 }
 
 //Additional BL for Order Prototypes
-// Orders.prototype.toppingCount = function(pizza) {
-//   let numberOfToppings = 0
-//   for (i=1; array.length; i++) {
-//     numberOfToppings++;
-//   }
-// }
 
 //Business Logic for Pizza Object
 function Pizza(pizzaSize, cheeseSelection, toppings) {
@@ -41,6 +34,11 @@ function Pizza(pizzaSize, cheeseSelection, toppings) {
   this.cheeseSelection = cheeseSelection;
   this.toppings = toppings;
 }
+
+Pizza.prototype.toppingCount = function() {
+  let numberOfToppings = this.toppings.length
+  return numberOfToppings;  
+} 
 
 //Sums toppings total
 Pizza.prototype.toppingsTotal = function () {
