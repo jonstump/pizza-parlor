@@ -1,4 +1,5 @@
 //Business Logic
+//Business Logic for Orders
 function Orders() {
   this.pizzas = {};
   this.currentId = 0;
@@ -25,8 +26,6 @@ Orders.prototype.findOrder = function(id) {
   }
   return false;
 }
-
-//Additional BL for Order Prototypes
 
 //Business Logic for Pizza Object
 function Pizza(pizzaSize, cheeseSelection, toppings) {
