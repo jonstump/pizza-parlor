@@ -19,13 +19,13 @@ Pizza.prototype.toppingsTotal = function () {
 //Assigns value to size selected
 Pizza.prototype.pizzaPriceSize = function() {
   if (this.pizzaSize === "small") {
-    sizePrice = 5
+    sizePrice = 5;
   } else if (this.pizzaSize === "medium") {
-    sizePrice = 7
+    sizePrice = 7;
   } else if (this.pizzaSize === "large") {
-    sizePrice = 9
+    sizePrice = 9;
   } else {
-    sizePrice = 10
+    sizePrice = 10;
   }
   return sizePrice;
 }
@@ -33,13 +33,13 @@ Pizza.prototype.pizzaPriceSize = function() {
 //Assigns value to cheese selected
 Pizza.prototype.pizzaPriceCheese = function() {
   if (this.cheeseSelection === "cheddar") {
-    cheesePrice = 2
+    cheesePrice = 2;
   } else if (this.cheeseSelection === "swiss") {
-    cheesePrice = 2
+    cheesePrice = 2;
   } else if (this.cheeseSelection === "parmesan") {
-    cheesePrice = 3
+    cheesePrice = 3;
   } else {
-    cheesePrice = 5
+    cheesePrice = 5;
   }
   return cheesePrice;
 }
@@ -50,9 +50,9 @@ Pizza.prototype.pizzaPrice = function() {
 }
 
 //User Interface Logic
+// let pizza = new Pizza();
+
 $("document").ready(function() {
-  let pizza = new Pizza();
-  
   $("form").submit(function(event){
     event.preventDefault();
     const sizeOfPizza = $("#sizeOfPizza").val();
@@ -63,13 +63,13 @@ $("document").ready(function() {
       toppingArray.push(toppingSelection);
     });
 
-    pizza.pizzaSize = sizeOfPizza;
-    pizza.cheeseSelection = cheese;
-    pizza.toppings = toppingArray;
+    let pizza = new Pizza(sizeOfPizza, cheese, toppingArray);
+    // pizza.pizzaSize = sizeOfPizza;
+    // pizza.cheeseSelection = cheese;
+    // pizza.toppings = toppingArray;
 
     let cost = pizza.pizzaPrice();
-    $(".price").text(cost)
+    $(".price").text(cost);
     $("#cost").slideDown();
-    console.log(pizza.pizzaPrice())
   });
 });
