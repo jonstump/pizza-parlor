@@ -50,8 +50,6 @@ Pizza.prototype.pizzaPrice = function() {
 }
 
 //User Interface Logic
-// let pizza = new Pizza();
-
 $("document").ready(function() {
   $("form").submit(function(event){
     event.preventDefault();
@@ -64,9 +62,6 @@ $("document").ready(function() {
     });
 
     let pizza = new Pizza(sizeOfPizza, cheese, toppingArray);
-    // pizza.pizzaSize = sizeOfPizza;
-    // pizza.cheeseSelection = cheese;
-    // pizza.toppings = toppingArray;
 
     let cost = pizza.pizzaPrice();
     $(".price").text(cost);
